@@ -17,7 +17,7 @@ EMBED_COLUMN = ["abstract"]
 
 
 def get_opensearch_client(
-    host: str = "localhost", port: str = 9200
+    host: str = "212.71.249.187", port: str = 9200
 ) -> OpenSearch:
     # Create the client with SSL/TLS and hostname verification disabled.
     client = OpenSearch(

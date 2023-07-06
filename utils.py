@@ -116,7 +116,7 @@ def find_similar_docs(query: str, k: int, num_results: int, index_name: str) -> 
         "query": {"knn": {VECTOR_NAME: {"vector": embed_vector, "k": k}}},
     }
 
-    url = f"http://localhost:9200/{index_name}/_search"
+    url = f"http://212.71.249.187:9200/{index_name}/_search"
     response = requests.get(
         url, json=body, headers={"Content-Type": "application/json"}
     )
